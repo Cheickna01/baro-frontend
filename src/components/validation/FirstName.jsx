@@ -1,7 +1,6 @@
 
-export default function Prenom({prenom,setPrenom}) {
+export default function FirstName({prenom,setPrenom}) {
 
-   
   return (
     <>
         <label htmlFor="pseudo">Votre prenom</label>
