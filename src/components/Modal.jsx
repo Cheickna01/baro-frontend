@@ -25,7 +25,7 @@ export default function Modal({
   function handleSubmit(e) {
     e.preventDefault();
     if (!log) {
-      fetch("http://localhost:4000/register", {
+      fetch("https://baro-backend.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,7 @@ export default function Modal({
         });
     } else {
       try {
-        fetch("http://localhost:4000/login", {
+        fetch("https://baro-backend.onrender.com/login", {
           method: "POST",
           headers: {
             "Content-Type": "Application/json",

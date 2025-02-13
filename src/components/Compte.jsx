@@ -5,7 +5,7 @@ export default function Compte({ showCompte, setShowCompte,utoken,setUtoken }) {
     const [infos,setInfos] = useState()
     console.log(infos)
     useEffect(()=>{
-        fetch(`http://localhost:4000/user`,{
+        fetch(`https://baro-backend.onrender.com/user`,{
             method: "GET",
             headers: {
                 "Content-Type": "Application/json",
@@ -28,7 +28,7 @@ export default function Compte({ showCompte, setShowCompte,utoken,setUtoken }) {
   }
   function handleDelete(){
     if(window.confirm("Voulez-vous vraiment supprimer votre compte?")){
-        fetch("http://localhost:4000/deleteuser", {
+        fetch("https://baro-backend.onrender.com/deleteuser", {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json",

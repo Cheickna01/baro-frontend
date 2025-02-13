@@ -5,7 +5,7 @@ import Update from "./Update";
 import EmojModal from "./EmojModal";
 import ReactionsModal from "./ReactionsModal";
 import { io } from "socket.io-client";
-const socket = io("http://localhost:4000", { transports: ["websocket"] });
+const socket = io("https://baro-backend.onrender.com/", { transports: ["websocket"] });
 export default function MessageBox({
   mes,
   utoken,
@@ -59,7 +59,7 @@ export default function MessageBox({
 
   function handleDelete() {
     if (window.confirm("Voulez vous supprimer ce message?")) {
-      fetch("http://localhost:4000/deletemessage", {
+      fetch("https://baro-backend.onrender.com/deletemessage", {
         method: "POST",
         headers: {
           "Content-Type": "Application/json",

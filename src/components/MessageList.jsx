@@ -23,7 +23,7 @@ export default function MessageList({
 }) {
   useEffect(() => {
     if (utoken) {
-      fetch("http://localhost:4000/messages", {
+      fetch("https://baro-backend.onrender.com/messages", {
         method: "get",
         headers: {
           "Content-Type": "Application/json",

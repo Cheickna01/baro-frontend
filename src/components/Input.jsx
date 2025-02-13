@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 import { io } from "socket.io-client";
-const socket = io("http://localhost:4000", { transports: ["websocket"] });
+const socket = io("https://baro-backend.onrender.com/", { transports: ["websocket"] });
 
 export default function Input({
   monMessage,
@@ -57,7 +57,7 @@ export default function Input({
     const time = new Date();
     setDay(time.getDay());
     if (update.statue === false && reply.statue === false) {
-      fetch("http://localhost:4000/sendmessage", {
+      fetch("https://baro-backend.onrender.com/sendmessage", {
         method: "POST",
         headers: {
           "Content-Type": "Application/json",
@@ -78,7 +78,7 @@ export default function Input({
         });
     } else if (update.statue === true && reply.statue === false) {
       console.log(update.statue);
-      fetch("http://localhost:4000/updatemessage", {
+      fetch("https://baro-backend.onrender.com/updatemessage", {
         method: "POST",
         headers: {
           "Content-Type": "Application/json",
@@ -101,7 +101,7 @@ export default function Input({
           console.error("Erreur de la requête:", err); // Log l'erreur si la requête échoue
         }); 
     } else if (reply.statue === true) {
-      fetch(`http://localhost:4000/reply/${id}`, {
+      fetch(`https://baro-backend.onrender.com/reply/${id}`, {
         method: "POST",
         headers: {
           "Content-Type": "Application/json",

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { io } from "socket.io-client";
-const socket = io("http://localhost:4000", { transports: ["websocket"] });
+const socket = io("https://baro-backend.onrender.com/", { transports: ["websocket"] });
 export default function EmojModal({
   showEmojis,
   emojis,
@@ -23,7 +23,7 @@ export default function EmojModal({
     };
   }, []);
   function handleReact(e) {
-      fetch("http://localhost:4000/updatemessage", {
+      fetch("https://baro-backend.onrender.com/updatemessage", {
         method: "POST",
         headers: {
           "Content-Type": "Application/json",

@@ -22,7 +22,7 @@ export default function UpdateUser({
     if (
       window.confirm("Voulez-vous vraiment mettre à jour vos informations?")
     ) {
-      fetch("http://localhost:4000/updateuser", {
+      fetch("https://baro-backend.onrender.com/updateuser", {
         method: "POST",
         headers: {
           "Content-Type": "Application/json",
