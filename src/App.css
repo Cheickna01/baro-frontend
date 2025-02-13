@@ -1,0 +1,29 @@
+.bag{
+    background-image: url("../img/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Personnalisation de la scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Largeur de la barre */
+}
+
+/* Couleur de fond de la scrollbar */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+/* Couleur de la poignée (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+/* Effet au survol */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
