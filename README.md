@@ -27,7 +27,7 @@ Context API (Gestion d'état globale)
 Cloner le dépôt
 
 git clone https://github.com/Cheickna01/baro-frontend.git
-cd talkify-frontend
+cd frontend
 
 Installer les dépendances
 
