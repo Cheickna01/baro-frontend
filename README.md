@@ -1,4 +1,4 @@
-Talkify est une application web permettant aux utilisateurs inscrits de laisser des messages sur la plateforme. Ce projet utilise React.js pour le frontend avec une interface en mode sombre.
+Baaro est une application web permettant aux utilisateurs inscrits de laisser des messages sur la plateforme. Ce projet utilise React.js pour le frontend avec une interface en mode sombre.
 
 🚀 Fonctionnalités
 
